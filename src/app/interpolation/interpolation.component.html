@@ -1,0 +1,20 @@
+
+<p>print the name using interpolation</p>
+<p>Hello, {{ name }}</p>
+
+<p>add two numbers using interpolation</p>
+<p>Result: {{ 5 + 3 }}</p>
+
+<p>print the user name in object using interpolation </p>
+<p>User Name: {{ user.name }}</p>
+
+<p>The name will be converted into uppercase using interpolation and the function will be returned </p>
+<p>Uppercase Name: {{ getNameUpperCase() }}</p>
+
+<p>In order to print the name using interpolation, we must hide the paragraph based on the condition</p>
+<p *ngIf="showMessage">Hello, {{ name }}</p>
+
+<p>To print the items using interpolation, one must iterate the ngFor for each item on the list  </p>
+<ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
